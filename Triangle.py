@@ -7,6 +7,10 @@ The primary goal of this file is to demonstrate a simple python program to class
 
 @author: jrr
 @author: rk
+
+@author: Nicole Hilden
+Updated on September 7 2018
+
 """
 
 def classifyTriangle(a,b,c):
@@ -33,7 +37,7 @@ def classifyTriangle(a,b,c):
         return 'InvalidInput';
     
     # require that the input values be >= 0 and <= 200
-    if a > 200 or b > 200 or c > 200:
+    if a >= 200 or b >= 200 or c >= 200:
         return 'InvalidInput'
         
     if a <= 0 or b <= 0 or c <= 0:
@@ -43,7 +47,7 @@ def classifyTriangle(a,b,c):
     # is important for correctness
     # the sum of any two sides must be strictly less than the third side
     # of the specified shape is not a triangle
-    if (a >= (b + c)) or (b >= (a + c)) or (c >= (a + b)):
+    if (a > (b + c)) or (b > (a + c)) or (c > (a + b)):
         return 'NotATriangle'
         
     # now we know that we have a valid triangle 
