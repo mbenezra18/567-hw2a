@@ -36,7 +36,7 @@ def classifyTriangle(a,b,c):
     if not(isinstance(a,int) and isinstance(b,int) and isinstance(c,int)):
         return 'InvalidInput';
     
-    # require that the input values be >= 0 and <= 200
+    # require that the input values be > 0 and <= 200
     if a > 200 or b > 200 or c > 200:
         return 'InvalidInput'
         
